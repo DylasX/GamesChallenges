@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Stop</h1>
+    <a id='refreshButton' href="/">Refresh</a>
+
+    <div class="wrapper">
+        <p id="randomLetra" class="informationText">Letra -</p>
+        <p class="informationText">Tiempo restante</p>
+        <p id="tiempoRestante" class="informationText">30s</p>
+        <div class="board">
+            <table class="editableTable">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Animal</th>
+                </tr>
+                <tr>
+                    <td contenteditable="true" id="nombre" onkeyup="typingValue(this)"></td>
+                    <td contenteditable="true" id="apellido" onkeyup="typingValue(this)"></td>
+                    <td contenteditable="true" id="animal" onkeyup="typingValue(this)"></td>
+                </tr>
+            </table>
+            <div>
+                <p id="result"></p>
+            </div>
+            <button id="checkWords" class="button" onclick="validateWords()">Enviar</button>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

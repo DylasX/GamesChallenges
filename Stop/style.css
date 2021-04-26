@@ -1,0 +1,107 @@
+@import url(https://fonts.googleapis.com/css?family=Londrina+Solid|Nunito:400,300);
+* {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    font-family: "Londrina Solid", cursive;
+    padding: 1%;
+}
+body {
+    background: #ecebeb;
+}
+a {
+    color: #53bdff;
+    text-decoration: none;
+    font-size: 14px;
+}
+a:hover {
+    color: #86d1ff;
+}
+.wrapper{
+    display: flex;
+    flex-flow: column;
+}
+.board{
+    flex: 1;
+    text-align: center;
+}
+.editableTable{
+    margin: 50px auto 50px auto;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+#refreshButton{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    padding: 10px;
+}
+h1 {
+    font-size: 50px;
+    color: #53bdff;
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+#result{
+    margin-top: 10px;
+    text-align: center;
+}
+p, th {
+    padding: 5px;
+    margin: 0px;
+    color: rgb(37, 37, 37);
+    font-size: 2.5em;
+}
+td{
+    font-size: 1.5em;
+    font-family: "Londrina Solid", cursive;
+
+}
+.informationText{
+    text-align: center;
+}
+
+.editableTable thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.editableTable th,
+.editableTable td {
+    padding: 12px 15px;
+}
+
+.editableTable tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.editableTable tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.editableTable tbody tr:last-of-type {
+    border-bottom: 2px solid #53bdff;
+}
+
+.button {
+    margin: 10px 0;
+    border: none;
+    font-size: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #53bdff;
+    color: white;
+    transition: 0.3s;
+    text-shadow: 1px 2px 0 #53bdff;
+    font-family: "Londrina Solid", cursive;
+}
+.button:hover {
+    background: #53bdff;
+}
+
